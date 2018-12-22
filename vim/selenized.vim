@@ -25,9 +25,8 @@ hi DiffChange   ctermfg=NONE ctermbg=0    cterm=NONE
 hi DiffDelete   ctermfg=1    ctermbg=0    cterm=NONE
 hi DiffText     ctermfg=0    ctermbg=3    cterm=NONE
 
-" syntax highlig TODO
-" Any kind of wrong syntax
-hi Error      ctermfg=1      ctermbg=0     cterm=reverse
+" syntax highlig
+
 " Comments, duh
 hi Comment    ctermfg=7
 " Actually this is for keywords, not whole statements
@@ -40,14 +39,21 @@ hi Operator   ctermfg=7      cterm=bold
 hi String     ctermfg=2
 " any kind of contstants, including strings
 hi Constant   ctermfg=3
-hi Character  ctermfg=6
+hi JavaScriptNumber   ctermfg=3
+" Special characters like \n
 hi Special    ctermfg=6
+
+hi Character  ctermfg=NONE
 hi Identifier ctermfg=NONE
 hi Function   ctermfg=NONE
 hi Delimiter  ctermfg=NONE
 hi PreProc    ctermfg=NONE
 hi Type       ctermfg=NONE
 hi Ignore     ctermfg=NONE   cterm=bold
+
+" Any kind of wrong syntax
+hi Error      ctermfg=1      ctermbg=0     cterm=reverse
+
 " hi Todo       ctermfg=Yellow ctermbg=black cterm=reverse
 
 " " syntax highlig
