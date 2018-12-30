@@ -12,7 +12,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "Selenized (0.2)",
+                "label": "Selenized (0.2-normal)",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Selenized.json"
             },
@@ -25,6 +25,16 @@
                 "label": "Selenized (0.0.2)",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Selenized-0.0.2.json"
+            },
+            {
+                "label": "Selenized (0.2-pastel)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Selenized-pastel.json"
+            },
+            {
+                "label": "Selenized (0.2-dimmed)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Selenized-dimmed.json"
             },
             {
                 "label": "Selenized (alternative)",

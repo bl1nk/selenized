@@ -1,0 +1,39 @@
+{
+	"name": "Selenized (dimmed)",
+	"include": "./Selenized.json",
+	"tokenColors": [
+		{
+			"scope": "keyword.operator.quantifier",
+			"settings": {
+				"foreground": "#c89400"
+			}
+		},
+		{
+			"scope": "string.quoted.multi",
+			"settings": {
+				"foreground": "#779e52"
+			}
+		},
+		{
+			"name": "stuff from library/framework",
+			"scope": "support.function",
+			"settings": {
+				"foreground": "#9a7ec4"
+			}
+		},
+		{
+			"name": "reserved language variables like this, super, self",
+			"scope": "variable.language",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#7286ae"
+			}
+		},
+		{
+			"scope": "variable.parameter",
+			"settings": {
+				"foreground": "#9f7d77"
+			}
+		}
+	]
+}

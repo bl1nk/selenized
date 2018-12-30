@@ -1,0 +1,39 @@
+{
+	"name": "Selenized (pastel)",
+	"include": "./Selenized.json",
+	"tokenColors": [
+		{
+			"scope": "keyword.operator.quantifier",
+			"settings": {
+				"foreground": "#d8bb72"
+			}
+		},
+		{
+			"scope": "string.quoted.multi",
+			"settings": {
+				"foreground": "#b1d092"
+			}
+		},
+		{
+			"name": "stuff from library/framework",
+			"scope": "support.function",
+			"settings": {
+				"foreground": "#baa1dd"
+			}
+		},
+		{
+			"name": "reserved language variables like this, super, self",
+			"scope": "variable.language",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#87a8e4"
+			}
+		},
+		{
+			"scope": "variable.parameter",
+			"settings": {
+				"foreground": "#e499c2"
+			}
+		}
+	]
+}
