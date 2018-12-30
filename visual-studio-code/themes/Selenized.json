@@ -107,6 +107,12 @@
 			}
 		},
 		{
+			"scope": "storage.type.format",
+			"settings": {
+				"foreground": "#eb8447"
+			}
+		},
+		{
 			"name": "Name of the defined entity",
 			"scope": "entity.name",
 			"settings": {
@@ -124,7 +130,7 @@
 		{
 			"scope": "variable",
 			"settings": {
-				"foreground": "#44cabb"
+				"foreground": "#f073bc"
 			}
 		},
 		{
@@ -132,6 +138,12 @@
 			"scope": "variable.other",
 			"settings": {
 				"foreground": "#c1c1c1"
+			}
+		},
+		{
+			"scope": "keyword.operator.quantifier",
+			"settings": {
+				"foreground": "#3d8ff0"
 			}
 		},
 		{

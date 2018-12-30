@@ -95,20 +95,11 @@ def generate_palette(
         in accents.iteritems()
     }
 
-    lt_accents = {
-        'lt_'+name: [(l + fg_l)/2, a*0.6, b*0.6]
-        for name, [l, a, b]
-        in accents.iteritems()
-    }
-
     dim_accents = {
-        'dim_'+name: [(l + dim_fg_l)/2, a*(l-(l+dim_fg_l)/2)/(fg_l-dim_fg_l)*4,
-            b*(l-(l+dim_fg_l)/2)/(fg_l-dim_fg_l)*4]
+        'dim_'+name: [l+10, a*0.625, b*0.625]
         for name, [l, a, b]
         in accents.iteritems()
     }
-
-
 
     ### FINAL ASSEMBLY
 
@@ -147,7 +138,6 @@ Background-accent distance:  min {:.3}, max {:.3}
     palette.update(monotones)
     palette.update(accents)
     palette.update(br_accents)
-    palette.update(lt_accents)
     palette.update(dim_accents)
 
     for name, (l,a,b) in palette.iteritems():
