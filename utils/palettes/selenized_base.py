@@ -96,13 +96,14 @@ def generate_palette(
     }
 
     lt_accents = {
-        'lt_'+name: [(l + br_fg_l)/2, a/2, b/2]
+        'lt_'+name: [(l + fg_l)/2, a*0.6, b*0.6]
         for name, [l, a, b]
         in accents.iteritems()
     }
 
     dim_accents = {
-        'dim_'+name: [(l + dim_fg_l)/2, a/2, b/2]
+        'dim_'+name: [(l + dim_fg_l)/2, a*(l-(l+dim_fg_l)/2)/(fg_l-dim_fg_l)*4,
+            b*(l-(l+dim_fg_l)/2)/(fg_l-dim_fg_l)*4]
         for name, [l, a, b]
         in accents.iteritems()
     }
