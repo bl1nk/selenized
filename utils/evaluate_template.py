@@ -22,7 +22,9 @@ MARKER_RE = re.compile(r'!!COL(?P<delim>.)(?P<format>.*?)(?P=delim)')
 DEFAULT_COLOR_ORDER = [
     'bg', 'black', 'br_black', 'white', 'fg', 'br_white',
     'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'orange', 'violet',
-    'br_red', 'br_green', 'br_yellow', 'br_blue', 'br_magenta', 'br_cyan', 'br_orange', 'br_violet'
+    'br_red', 'br_green', 'br_yellow', 'br_blue', 'br_magenta', 'br_cyan', 'br_orange', 'br_violet',
+    'lt_red', 'lt_green', 'lt_yellow', 'lt_blue', 'lt_magenta', 'lt_cyan', 'lt_orange', 'lt_violet',
+    'dim_red', 'dim_green', 'dim_yellow', 'dim_blue', 'dim_magenta', 'dim_cyan', 'dim_orange', 'dim_violet',
 ]
 
 def load_palette_from_module(module_name):
@@ -58,7 +60,7 @@ def load_palette_from_module(module_name):
 
     print '\nPalette:', palette['name'], '\n'
     for color in DEFAULT_COLOR_ORDER:
-        if color in ['red', 'br_red']:
+        if color in ['red', 'br_red', 'lt_red', 'dim_red']:
             print '' # section separator
         if color in palette:
             print "{:<12}{}".format(color, palette[color])
