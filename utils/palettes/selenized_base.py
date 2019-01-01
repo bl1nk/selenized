@@ -96,7 +96,7 @@ def generate_palette(
     }
 
     dim_accents = {
-        'dim_'+name: [l+10, a*0.625, b*0.625]
+        'dim_'+name: [l+15, a*0.75, b*0.75]
         for name, [l, a, b]
         in accents.iteritems()
     }
