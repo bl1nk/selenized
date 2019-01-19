@@ -96,8 +96,21 @@ def generate_palette(
     if not br_accent_shift:
         br_accent_shift = contrast/10
 
+
+    factors = {}
+
+    for k, v in accents.items():
+        l_diff = fg_l-v[0]
+        if l_diff == accent_l_spread:
+            saturation_factor = 1
+        if l_diff == 0:
+            saturation_factor = 0.25
+        if l_diff > 0 and l_diff < accent_l_spread:
+            saturation_factor = (l_diff/accent_l_spread)*0.75 + 0.25
+        factors[k] = saturation_factor
+
     br_accents = {
-        'br_'+name: [l + direction*br_accent_shift, a, b]
+        'br_'+name: [fg_l, factors[name]*a, factors[name]*b]
         for name, [l, a, b]
         in accents.items()
     }
@@ -154,4 +167,3 @@ Background-accent distance:  min {:.3}, max {:.3}
         palette[name] = [l, a*saturation, b*saturation]
 
     return palette
-
