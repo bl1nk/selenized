@@ -18,7 +18,7 @@
 		{
 			"scope": "comment",
 			"settings": {
-				"foreground": "#7e7e7e"
+				"foreground": "##7a7a7a"
 			}
 		},
 		{

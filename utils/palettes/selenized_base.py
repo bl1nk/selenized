@@ -44,9 +44,9 @@ def generate_palette(
 
     # color used for comments and other secondary content; it's a weighted
     # average of fg and bg
-    dim_fg_l = 3/8 * bg_l + 5/8 * fg_l
-    dim_fg_a = 3/8 * bg_a + 5/8 * fg_a
-    dim_fg_b = 3/8 * bg_b + 5/8 * fg_b
+    dim_fg_l = 1/2 * bg_l + 1/2 * fg_l
+    dim_fg_a = 1/2 * bg_a + 1/2 * fg_a
+    dim_fg_b = 1/2 * bg_b + 1/2 * fg_b
 
     monotones = {
         "bg":       [bg_l,     bg_a,     bg_b    ],
